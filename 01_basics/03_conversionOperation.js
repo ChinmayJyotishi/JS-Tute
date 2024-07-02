@@ -62,5 +62,63 @@
 let num=122
 
 let numString=String(num)
-console.log(numString);
-console.log(typeof numString);
+// console.log(numString);
+// console.log(typeof numString);
+
+// **************************** Operations*******************************
+
+// general operations
+// console.log(3+3);
+// console.log(3-3);
+// console.log(3/3);
+// console.log(3%3); // it will give reminder
+// console.log(3**3);
+
+// let str1='Hello'
+// let str2=' Chinmay'
+// console.log(str1+str2);
+// console.log(str1*3); // here it will give NaN
+
+// tricky
+// console.log("1"+2);
+// console.log(1+"2");
+// console.log("1"+2+2);
+// console.log(2+2+"1");
+
+// how these are working 
+/* if the first value is string then it will consider all of them as string and concatinate them
+   ex- console.log("1"+2+2); as string is first value so the output is 122
+
+   if the value is a number and string is coming in last then it will first add all the numeric values then concatinate with the string
+   console.log(2+2+"1"); 2+2 is 4 then concatinate with 1
+
+*/
+
+// console.log(+true);
+// In JavaScript, the + operator can be used to convert a value to a number. When applied to a boolean value like true, it converts true to 1 and false to 0.
+
+// console.log(+""); 
+// as "" is a empty string means 0 value so it will convert to 0
+
+
+// prefix and postfix
+
+// let stepCounter=1000
+// // stepCounter++
+// ++stepCounter
+// console.log(stepCounter);
+
+let x = 3;
+const y = x++;
+
+console.log(`x:${x}, y:${y}`);
+// Expected output: "x:4, y:3"
+//const y = x++;: Here, x++ is the post-increment operator. It returns the current value of x (which is 3) and then increments x by 1. So, y is assigned the value 3, and x becomes 4.
+
+let a = 3;
+const b = ++a;
+
+console.log(`a:${a}, b:${b}`);
+// Expected output: "a:4, b:4"
+
+// const b = ++a;: Here, ++a is the pre-increment operator. It increments a by 1 first (making a equal to 4) and then returns the new value of a. So, b is assigned the value 4
