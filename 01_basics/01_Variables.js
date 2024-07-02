@@ -26,4 +26,4 @@ console.log(a);
 // let b=98 // you cant redeclare 
 // console.log(b);
 
-window.alert("heelo")
+
